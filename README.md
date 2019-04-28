@@ -1,4 +1,4 @@
-# MeanBook
+# ChatApp
 
 A simple chat application using MongoDB, ExpressJs, Angaulr 7 and Nodejs.
 
