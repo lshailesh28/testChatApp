@@ -1,0 +1,24 @@
+<div class="col-md-4 col-xl-3 chat">
+  <div class="card mb-sm-3 mb-md-0 contacts_card">
+    <div class="card-header text-white text-center">
+      <h4><strong>Available Users</strong> </h4>
+    </div>
+    <div class="card-body contacts_body">
+      <ul class="contacts" *ngFor="let chat of allChats">
+        <li *ngIf="!chat.userID">
+          <div class="d-flex bd-highlight">
+            <div class="img_cont">
+              <img src="../../assets/man-icon.png" class="rounded-circle user_img" />
+              <span class="online_icon offline"></span>
+            </div>
+            <div class="user_info">
+              <span>{{chat.userName}}</span>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+</div>
